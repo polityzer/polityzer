@@ -4,3 +4,10 @@ __pycache__
 .DS_Store
 */.DS_Store
 datasets_2020/*.tar.gz
+
+#auto-generated content
+*/chromedriver/chromedriver
+*/database/downloaded_websites.csv
+*/html/
+*/logs/
+*/results/
