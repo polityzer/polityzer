@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "polityzer_tool"
+version = "0.1.0"
+description = ""
+authors = ["Kaushal <kkafle@cs.wm.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+scrapy-selenium = "^0.0.7"
+colorlog = "^6.6.0"
+tldextract = "^3.1.2"
+beautifulsoup4 = "^4.10.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
