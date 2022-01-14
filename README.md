@@ -3,7 +3,7 @@ A framework to semi-automatically analyze the privacy practices of election camp
 
 ## Dependencies
 Polityzer supports building the project via [poetry](https://python-poetry.org/). 
-All required dependencies are listed in pyproject.toml under _tool.poetry.dependencies_. 
+All required dependencies are listed in <code>pyproject.toml</code> under _tool.poetry.dependencies_. 
 If using poetry, simply run <code> poetry install </code> to install dependencies.
 If poetry is not used, you can also install the dependency individually via <code>pip install</code>. 
 
