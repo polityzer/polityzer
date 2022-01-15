@@ -8,7 +8,7 @@ If using poetry, simply run <code> poetry install </code> to install dependencie
 If poetry is not used, you can also install the dependency individually via <code>pip install</code>. 
 
 ## Folder Structure
-<code>polityzer_tool</code> folder contains all the relevant source code. <code>datasets_2020</code> contains the datasets while the <code>results</code> folder contains the results. 
+<code>polityzer_tool</code> folder contains all the relevant source code. <code>datasets_2020</code> contains the datasets. 
 
 ## How to use Polityzer
 1. Install all the dependencies. 
