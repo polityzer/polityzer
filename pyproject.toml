@@ -2,7 +2,7 @@
 name = "polityzer_tool"
 version = "0.1.0"
 description = ""
-authors = ["Kaushal <kkafle@cs.wm.edu>"]
+authors = ["Anonymous"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
