@@ -1,6 +1,9 @@
 # Polityzer
 A framework to semi-automatically analyze the privacy practices of election campaigns. This repo contains the source code to the automated part, the datasets collected for the analysis of the 2020 election, as well as the results of the analysis. 
 
+## Online Appendix for the Oakland'23 Submission
+The file <code>email_template.pdf</code> contains the details on the responsible disclosure to the campaigns without privacy policies, and the email template used during the disclosure. 
+
 ## Dependencies
 Polityzer supports building the project via [poetry](https://python-poetry.org/). 
 All required dependencies are listed in <code>pyproject.toml</code> under _tool.poetry.dependencies_. 
