@@ -59,7 +59,9 @@ def configure_ChromeDriver():
     if not os.path.isdir(chromedriver_folder):
         os.mkdir(chromedriver_folder)
     if not os.path.isfile(chromedriver_path):
-        _Logger.debug(f"Chromedriver not found. Downloading and installing at {chromedriver_folder}")
+        _Logger.debug(
+            f"Chromedriver not found. Downloading and installing at {chromedriver_folder}"
+        )
         from chromedriver import installer
 
         installer.install(path=chromedriver_folder)
@@ -72,7 +74,9 @@ def configure_ChromeDriver():
             os.chmod(chromedriver_path, 0o744)
             return os.access(chromedriver_path, os.X_OK)
     else:
-        _Logger.error(f"Chromedriver setup failed. Download the proper chromedriver file at {chromedriver_folder}")
+        _Logger.error(
+            f"Chromedriver setup failed. Download the proper chromedriver file at {chromedriver_folder}"
+        )
         return False
 
 
@@ -284,7 +288,9 @@ class CandidateUtils:
     def get_webpages(candidate_name, candidate_office):
         """returns a generator that generates the downloaded webpages of a given candidate's name"""
 
-        website_path = CandidateUtils.get_candidate_website_folder(candidate_name, candidate_office)
+        website_path = CandidateUtils.get_candidate_website_folder(
+            candidate_name, candidate_office
+        )
         if not os.path.isdir(website_path):
             return
         for webpage in os.listdir(website_path):
@@ -301,7 +307,8 @@ class CandidateUtils:
                     continue
                 forms = soup.find_all("form")
                 if not forms:
-                    return []
+                    # return []
+                    continue
                 for form in forms:
                     if form.find_all("input"):
                         labels = form.find_all("label")
